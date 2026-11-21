@@ -1,0 +1,2 @@
+madeira {'valid': False, 'solids': 18, 'bbox_mm': [120.0, 60.728744939265994, 7.85], 'volume_sum_mm3': 35192.93415724982}
+crest {'valid': False, 'solids': 72, 'bbox_mm': [60.0, 70.0, 2.8], 'volume_sum_mm3': 6577.072279755581, 'bore_probe_intersection_mm3': 0.0}

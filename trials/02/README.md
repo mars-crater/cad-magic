@@ -14,3 +14,5 @@ Build two bold reliefs: Madeira Island from the north-up terrain picture and a M
 
 - Madeira: Mapzen Terrarium elevation tiles (AWS Open Data); crop west −17.30°, east −16.62°, north 32.90°, south 32.61°. North up, black = sea level, brighter = higher. Source: https://registry.opendata.aws/terrain-tiles/
 - Crest: https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg — Manchester United FC emblem, reference only; not covered by this project's MIT license. Fetch directly for the student rather than republishing the original.
+
+[Baseline: Terra 6.1 — assessment, renders and failed STEP exports](v1.2026-11-21.terra+6.1/README.md)

@@ -1,0 +1,1 @@
+10 mm rise variant valid, count, XYZ extents: True 1 129.25 60.50000000000001 12.079296681562159

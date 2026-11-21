@@ -1,0 +1,17 @@
+{
+  "Madeira width 145 -> 160 mm": {
+    "dimensions XYZ mm": [
+      160.0,
+      75.57446808510639,
+      28.0
+    ]
+  },
+  "crest bore 5 -> 6 mm": {
+    "bore diameter mm": 6.0,
+    "loop outer diameter mm": 11.0,
+    "unchanged concentric center XY mm": [
+      0.0,
+      38.24948096885813
+    ]
+  }
+}

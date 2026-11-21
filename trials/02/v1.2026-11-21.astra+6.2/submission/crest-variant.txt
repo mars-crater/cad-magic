@@ -1,0 +1,1 @@
+5 mm bore variant: True 1 57.800000000000004 65.9 4.05 void radial 2.4 True rim radial 2.6 True

@@ -1,0 +1,77 @@
+{
+  "main-island coastline IoU": 0.9707,
+  "eastern peninsula IoU": 0.9302,
+  "sampled source elevation vs STEP height Pearson r": 0.9923,
+  "sample count": 2561,
+  "landmarks (pixel x,y; shade; STEP height)": {
+    "central crest": [
+      130,
+      60,
+      229,
+      26.096
+    ],
+    "south slope": [
+      130,
+      90,
+      126,
+      15.759
+    ],
+    "south descent": [
+      130,
+      100,
+      45,
+      8.113
+    ],
+    "south valley": [
+      120,
+      80,
+      56,
+      10.84
+    ],
+    "south valley west bank": [
+      110,
+      80,
+      178,
+      21.58
+    ],
+    "south valley east bank": [
+      130,
+      80,
+      193,
+      23.433
+    ],
+    "north valley": [
+      100,
+      50,
+      40,
+      7.301
+    ],
+    "north valley west bank": [
+      90,
+      50,
+      59,
+      9.318
+    ],
+    "north valley east bank": [
+      110,
+      50,
+      183,
+      20.764
+    ],
+    "east headland": [
+      220,
+      70,
+      14,
+      3.607
+    ]
+  },
+  "solid count": 1,
+  "is valid": true,
+  "dimensions XYZ mm": [
+    145.0,
+    68.48936,
+    28.0
+  ],
+  "volume mm3": 58262.604,
+  "mesh triangles": 4712
+}

@@ -16,3 +16,5 @@ Build two bold reliefs: Madeira Island from the north-up terrain picture and a M
 - Crest: https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg — Manchester United FC emblem, reference only; not covered by this project's MIT license. Fetch directly for the student rather than republishing the original.
 
 [Baseline: Terra 6.1 — assessment, renders and failed STEP exports](v1.2026-11-21.terra+6.1/README.md)
+
+[Three-run comparison and skill-version ledger](comparison.md)

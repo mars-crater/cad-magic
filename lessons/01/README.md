@@ -6,6 +6,8 @@ I reviewed the Session 1 outline and slides for the original SolidWorks track. I
 
 ## What I learned
 
+**[Skill outcome](../../skills/cad-magic/SKILL.md#apply-the-workflow-to-the-input):** Choose a stable datum, change a driving dimension, and check what should stay fixed.
+
 - **Choose the plane and anchor the sketch before building the solid.** A sketch starts as 2D geometry. The plane gives it orientation; linking features to the origin or a centerline gives them a stable reference. Construction geometry helps position and align things without becoming part of the solid profile.
 - **Dimensions tell it how big; relations tell it how to behave.** Smart Dimension supplies values, while relations such as coincident, concentric, or horizontal express how geometry should stay connected or aligned. A fully defined sketch has no unintended freedom to move or resize. For stacked circles, a shared center plus separate diameter dimensions expresses the design better than just fixing circles where I happened to draw them.
 - **Build from major volumes to smaller details.** Extruded Boss/Base adds volume from a profile; Extruded Cut removes it. A fillet rounds an edge, while a chamfer bevels it. For the cake, I'd start with the largest tier, add smaller concentric tiers, then experiment with cuts and edge treatments. That's my proposed feature order, not a reconstruction of the instructor's file.

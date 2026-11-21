@@ -6,6 +6,8 @@ I reviewed the Session 2 outline and slides for the original SolidWorks track, t
 
 ## What I learned
 
+**[Skill outcome](../../skills/cad-magic/SKILL.md#apply-the-workflow-to-the-input):** When tracing a different subject, keep the learning objective: identify the shapes and gaps that make it recognizable, then compare the exported outline or sections with the independent reference.
+
 A sketch picture is evidence, not decoration. Start by deciding what must survive the translation: two separate summits and a lower saddle on Hawaiʻi; the emblem's internal shapes as well as its outline on the keychain. Check the final STEP against that evidence, not just against the code that built it.
 
 ## Course exercises

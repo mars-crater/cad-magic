@@ -13,17 +13,29 @@ def cake(second_diameter=72):
     cake_solid = cq.Workplane("XY").circle(diameters[0] / 2).extrude(12)
     for diameter in diameters[1:]:
         cake_solid = cake_solid.faces(">Z").workplane().circle(diameter / 2).extrude(12)
+    for level, diameter in enumerate(diameters):
+        # Cut two narrow frosting channels around each tier.
+        for height in (3, 8):
+            groove = (cq.Workplane("XY", origin=(0, 0, level * 12 + height))
+                      .circle(diameter / 2 + 0.5).circle(diameter / 2 - 1).extrude(1.4))
+            cake_solid = cake_solid.cut(groove)
     return cake_solid.faces(">Z").edges().chamfer(1).faces(">Z").workplane().hole(6, 4)
 
 
 def phone():
     width, length, depth = (size * INCH for size in (2.64, 5.44, 0.27))
-    return (
+    body = (
         cq.Workplane("XY").rect(width, length).extrude(depth)
         .edges("|Z").fillet(8)
         .faces(">Z").edges().fillet(0.7)
         .faces(">Z").workplane().center(0, -length / 2 + 7).hole(10, 0.6)
     )
+
+    screen = (cq.Workplane("XY", origin=(0, 0, depth - 0.9))
+              .rect(width - 8, length - 28).extrude(1.5).edges("|Z").fillet(3))
+    speaker = (cq.Workplane("XY", origin=(0, length / 2 - 7, depth - 1.2))
+               .slot2D(14, 2.6).extrude(2))
+    return body.cut(screen).cut(speaker)
 
 
 def pencil():
@@ -41,6 +53,10 @@ def pencil():
         cq.Workplane("XY", origin=(0, 0, tip + shaft)).circle(radius)
         .extrude(ferrule + eraser).faces(">Z").edges().fillet(0.02 * INCH)
     )
+    for offset in (1.4, 3.1, 5, 7, 9, 11.4):
+        groove = (cq.Workplane("XY", origin=(0, 0, tip + shaft + offset))
+                  .circle(radius + 0.3).circle(radius - 0.42).extrude(0.7))
+        tail = tail.cut(groove)
     return barrel.union(point).union(tail)
 
 
@@ -70,5 +86,14 @@ if __name__ == "__main__":
         measured = check(model, expected)
         path = HERE / f"lesson-01-{name}.step"
         cq.exporters.export(model, str(path))
-        check(cq.importers.importStep(str(path)), expected)
+        rebuilt = cq.importers.importStep(str(path))
+        check(rebuilt, expected)
+        # Probe the recess and neighboring retained material on the STEP solid.
+        void, material = {
+            "cake": ((46.6, 0, 3.5), (46.6, 0, 5)),
+            "phone": ((0, 0, 6.3), (0, 0, 5.7)),
+            "pencil": ((3.4, 0, 142.2), (3.4, 0, 143)),
+        }[name]
+        assert not rebuilt.val().isInside(cq.Vector(*void))
+        assert rebuilt.val().isInside(cq.Vector(*material))
         print(f"{name}: {tuple(round(value, 3) for value in measured)} mm; STEP round-trip valid")

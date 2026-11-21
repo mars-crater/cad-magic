@@ -48,16 +48,28 @@ def terrain():
             cq.Workplane("XY", origin=(0, 0, level * 3))
             .spline(trace(image, color), periodic=True).close().extrude(3)
         )
-    return part
+    # Mill an irregular summit basin plus shallow channels on the middle ledge.
+    basin = (cq.Workplane("XY", origin=(0, 0, 6.8))
+             .spline([(-9, 0), (-4, 6), (4, 5), (8, 0), (2, -4), (-5, -4)],
+                     periodic=True).close().extrude(3))
+    channels = (cq.Workplane("XY", origin=(0, 0, 4.9))
+                .pushPoints([(-5, -20), (0, -20), (5, -20)]).slot2D(5, 1.4, 90).extrude(2))
+    return part.cut(basin).cut(channels)
 
 
 def keychain():
     outline = [(-25, 0), (-13, 12), (3, 15), (22, 8), (27, 0),
                (20, -9), (2, -14), (-13, -10)]
-    return (
+    body = (
         cq.Workplane("XY").spline(outline, periodic=True).close().extrude(4)
         .faces(">Z").workplane(centerOption="ProjectedOrigin").center(19, 0).hole(5)
     )
+
+    pocket = (cq.Workplane("XY", origin=(-6, 0, 2.7))
+              .ellipse(11, 7).extrude(2))
+    grip = (cq.Workplane("XY", origin=(0, 0, 3.2))
+            .pushPoints([(5, -7), (8, -5), (11, -3)]).slot2D(5, 1.3, 90).extrude(1.5))
+    return body.cut(pocket).cut(grip)
 
 
 if __name__ == "__main__":
@@ -74,4 +86,7 @@ if __name__ == "__main__":
         else:
             areas = [result.section(z).val().Area() for z in (1, 4, 7)]
             assert areas[0] > areas[1] > areas[2] > 0
+        x, y, z = (0, 0, 8) if name == "terrain" else (-6, 0, 3.5)
+        assert not result.val().isInside(cq.Vector(x, y, z))
+        assert result.val().isInside(cq.Vector(x, y, z - 1.5))
         print(f"{name}: valid single solid, {height} mm tall; feature checks passed")

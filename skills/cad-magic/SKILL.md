@@ -17,6 +17,8 @@ description: Build, revise, verify, or render simple parametric CAD parts using 
 - **Dimensioned part:** Anchor the sketch or profile to the origin or a stable datum. Use dimensions and relations rather than fixing geometry where it was drawn. Change one driving dimension and check the intended invariant, such as concentric tiers after a diameter edit ([Lesson 1](../../lessons/01/README.md)).
 - **Image or contour reference:** Calibrate scale and origin before tracing. Sample curvature changes rather than pixel noise; inspect the closed spline for overshoot or self-intersection before extruding. Keep functional features such as hole diameters independently dimensioned. Verify terrain with sections and check bores separately from overall bounds.
 
+- **Surface detail:** Model holes, pockets, and grooves that need to exist in the exported part. Keep appearance-only texture separate. After STEP reimport, check the opening and retained material beneath a blind cut, or confirm a through-hole with a section. Use angled light to reveal shallow details.
+
 The [lesson index](../../lessons/README.md) provides evidence and rebuildable examples; the workflow above does not require reading the lessons first.
 
 ## Lesson documentation

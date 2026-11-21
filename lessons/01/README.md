@@ -23,6 +23,8 @@ I reviewed the Session 1 outline and slides for the original SolidWorks track. I
 - [Phone](lesson-01-phone.step): 67.056 × 138.176 × 6.858 mm, matching the slide's envelope. Corner radii and button recess are approximations.
 - [Pencil](lesson-01-pencil.step): 155.702 mm long, with a hexagonal barrel, tapered point and rounded eraser end. I used the drawing's .14 in radius, which gives .2425 in across the hex flats rather than the separately marked .25 in. The ferrule and graphite details are simplified.
 
+The detail pass added two recessed frosting bands per tier, a recessed phone screen and earpiece, and six grooves around the pencil ferrule. These are modeled cuts, not painted lines. The STEP checks probe one cut and adjacent retained material on each model.
+
 ## Verification and limits
 
 All three reopened from STEP as single valid solids and retained their checked overall dimensions. The STEP files contain geometry; the Python source contains the editable parameters.

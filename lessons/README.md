@@ -11,4 +11,6 @@ Each lesson records what was built, what was verified, and which technique becam
   [![Three-tier terrain and spline keychain](02/renders.png)](02/README.md)
 
 
+Both lessons include a surface-detail pass: bands and recesses in Lesson 1; a basin, channels, and grip slots in Lesson 2. The lesson pages distinguish the modeled details from the checks actually run.
+
 These are CAD checks, not physical print tests.

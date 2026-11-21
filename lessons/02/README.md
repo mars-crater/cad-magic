@@ -17,6 +17,8 @@ The lesson uses a map to build topographic relief and a logo to make a keychain 
 - [Terrain](terrain.step): I made an original [synthetic contour image](contour-reference.png), set the scale at 5 px/mm, traced 24 points per contour, and extruded three 3 mm levels. This is a tracing exercise, not surveyed terrain. The ray sampler assumes each contour has a single outer boundary along rays from the common center; hand-trace more complex outlines instead.
 - [Keychain](keychain.step): I used eight authored points for a smooth outline and treated the 5 mm through-hole as a separate feature so its diameter does not depend on the silhouette.
 
+The detail pass added a spline-cut summit basin and three shallow channels to the terrain, plus an elliptical pocket and grip slots to the keychain. STEP checks probe the basin and pocket and confirm that material remains beneath both.
+
 ## Verification and limits
 
 Both STEP reimports were valid single solids. I checked terrain height (9 mm) and decreasing sectional areas at the three levels, plus keychain thickness (4 mm), bore diameter (5 mm), and an interior section through the bore.

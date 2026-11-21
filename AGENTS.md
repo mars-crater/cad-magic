@@ -2,6 +2,12 @@
 
 CAD Magic is a skill first. The [skill](skills/cad-magic/SKILL.md) tells an agent how to do the work; the [lesson index](lessons/README.md) points to evidence that the techniques work. Keep the [root README](README.md) focused on agent capabilities. Put exercises, original course credits, build commands, artifacts, and observed results on the lesson pages.
 
+## Start with the intended result
+
+For work based on media, open the actual image, drawing, slide, or relevant video segment before designing. Identify what the viewer must recognize or the part must do. Record the reference, the features that carry its meaning, and deliberate departures (including substitute artwork, scale, omitted detail, and why). Do not generate a reference from your proposed model and treat agreement as independent evidence.
+
+Choose fidelity checks before building. For a map, this might mean a coastline, distinct peaks, and the saddle between them; for a logo, it might mean a silhouette plus characteristic internal shapes and negative space. Preserve these before adding decoration. Compare the exported part with the reference in a matched orientation and show the comparison where useful. Passing solid, dimension, and export checks proves mechanical properties, not recognition. If the geometry passes but the defining features are missing, revise it before claiming the lesson's outcome. Transfer the demonstrated decision rule, not just the tool name, into the skill.
+
 ## Keep each change coherent
 
 - **Geometry or quality change:** Edit the parametric source, rebuild the affected exports, then reimport and check them. Regenerate renders from those exports, not from a reference image or an earlier revision. Inspect the new views at normal reading size and add a close-up or section if the changed detail is hard to see.

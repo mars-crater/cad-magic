@@ -5,7 +5,7 @@
 ## What the skill gives an agent
 
 - **Model for change.** Choose stable references and encode design intent so dimensions can change without losing alignment. Build the main volumes before cuts and edge details.
-- **Turn a reference into geometry.** Calibrate image scale, trace meaningful curvature with closed splines, and keep critical dimensions such as hole sizes independent of the trace.
+- **Turn a reference into geometry.** Identify the features that make the subject recognizable, trace at a known scale, then compare the exported geometry against the source. Keep functional dimensions such as hole sizes independent of the trace.
 - **Hand off checked results.** Provide editable source, reimport exported STEP files to check geometry, and render the saved model when a visual preview is needed. Report what was measured, estimated, and not tested.
 
 ## Use the skill
@@ -21,6 +21,6 @@ Based on [How to CAD Almost Anything (RES.16-002, MIT IAP 2024)](https://ocw.mit
 ## License
 
 Original CAD Magic code, skill instructions, notes, models, and renders are
-available under the [MIT License](LICENSE). Linked MIT OpenCourseWare materials
+available under the [MIT License](LICENSE). Lesson 2’s [elevation data](lessons/02/terrain-source.md) and [pictogram artwork](lessons/02/keychain-reference-LICENSE.txt) retain their source terms. Linked MIT OpenCourseWare materials
 and instructor resources remain under their respective terms; this license does
 not apply to them.

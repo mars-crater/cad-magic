@@ -6,30 +6,33 @@ I reviewed the Session 2 outline and slides for the original SolidWorks track, t
 
 ## What I learned
 
-A sketch picture gives you a tracing reference, not a real-world scale. Set an origin and calibrate from a known length before tracing. Use enough spline points to preserve significant changes in curvature, but don't chase every pixel. A periodic spline makes the seam smooth; check that the resulting profile closes and doesn't cross itself before extruding.
+A sketch picture is evidence, not decoration. Start by deciding what must survive the translation: two separate summits and a lower saddle on Hawaiʻi; the emblem's internal shapes as well as its outline on the keychain. Check the final STEP against that evidence, not just against the code that built it.
 
 ## Course exercises
 
-The lesson uses a map to build topographic relief and a logo to make a keychain (slides 4–6). I used original practice artwork instead of the course examples.
+On slide 5, the Big Island's coastline and nested elevation lines become a stepped relief. Slide 6 turns the Panda Express logo into a keychain: the panda, lettering, and contrast remain legible, and the loop sits outside the main design. The workshop outline permits a logo of your choice. These models use independently sourced reference material rather than redistributing the instructor's artwork.
 
 ## Practice results
 
-- [Terrain](terrain.step): I made an original [synthetic contour image](contour-reference.png), set the scale at 5 px/mm, traced 24 points per contour, and extruded three 3 mm levels. This is a tracing exercise, not surveyed terrain. The ray sampler assumes each contour has a single outer boundary along rays from the common center; hand-trace more complex outlines instead.
-- [Keychain](keychain.step): I used eight authored points for a smooth outline and treated the 5 mm through-hole as a separate feature so its diameter does not depend on the silhouette.
+- **Hawaiʻi Island:** The hooked northwest coast and long southern cape establish orientation. Nine elevation bands separate Mauna Kea from Mauna Loa; the saddle between them matters as much as the summits. The reference panel colors the original, unsmoothed elevation raster. The model fits periodic splines to smoothed contours; equal-thickness steps exaggerate height. [Data, attribution, and calibration](terrain-source.md).
+- **Whale-watching keychain:** I chose a whale-tail map pictogram instead of the instructor's panda. Its asymmetric flukes and the gap above the waves carry the image. The attachment point is a functional addition, not part of the source emblem. [Reference artwork](keychain-reference.svg) · [artwork license](keychain-reference-LICENSE.txt).
 
-The detail pass added a spline-cut summit basin and three shallow channels to the terrain, plus an elliptical pocket and grip slots to the keychain. STEP checks probe the basin and pocket and confirm that material remains beneath both.
+![Source references beside renders of the exported island and keychain](renders.png)
 
 ## Verification and limits
 
-Both STEP reimports were valid single solids. I checked terrain height (9 mm) and decreasing sectional areas at the three levels, plus keychain thickness (4 mm), bore diameter (5 mm), and an interior section through the bore.
+The first attempt checked valid solids but used a self-generated island outline and a blank tag. Those checks could not establish fidelity. This revision retains the STEP checks and compares defining features against independent source media. The nine horizontal sections of the reimported island overlap their source masks by 88.4–98.3% (intersection over union). Both named summits reach the highest tier; their saddle does not. The 20 m band approximates the coastline. The whale relief matches 94.6% of the source mask by intersection over union; its tail and water remain distinct and the 5 mm bore clears the emblem. Neither part was printed.
 
 ## Artifacts and rebuild
 
-[Editable source](models.py)
+[Terrain STEP](terrain.step) · [Keychain STEP](keychain.step) · [Build and checks](models.py) · [Comparison renderer](render.py)
 
-![Three-tier terrain and spline keychain](renders.png)
+After installing the repository requirements, run from the repository root:
 
-After installing the repository requirements, run `python lessons/02/models.py` from the repository root.
+```sh
+python lessons/02/models.py
+python lessons/02/render.py
+```
 
 ## Sources
 
@@ -37,3 +40,4 @@ After installing the repository requirements, run `python lessons/02/models.py` 
 - [Instructor's Session 2 outline](https://github.com/andyeske/How-to-CAD-Almost-Anything#S2)
 - [Session 2 slides](https://github.com/andyeske/How-to-CAD-Almost-Anything/blob/main/Session%20Files/Session%202/Session%202.pdf), especially slides 2 and 4–6
 - [Session recording](https://www.youtube.com/watch?v=4fcvDSAFNGo) (reference; not reviewed)
+- [NPS NPMap whale-viewing symbol, pinned source](https://github.com/nationalparkservice/symbol-library/blob/27e97208c860366ab9d78dfe594a778c411661fb/src/standalone/whale-viewing-black-30.svg); artwork and derivative trace retain the [BSD notice](keychain-reference-LICENSE.txt), © 2013 Mapbox.

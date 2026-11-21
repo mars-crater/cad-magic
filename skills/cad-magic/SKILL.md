@@ -19,3 +19,7 @@ Start with [Lesson 1 notes](../../lessons/01/README.md) and the [CadQuery exampl
 ## Image tracing and spline profiles
 
 For [Lesson 2](../../lessons/02/README.md), calibrate image scale and origin before tracing. Sample meaningful curvature changes rather than pixel noise. Check spline closure and inspect for overshoot or self-intersection before extruding. Keep hole dimensions separate from the traced outline. Verify terrain tiers with sections and verify the keychain bore independently of its overall bounds.
+
+## Lesson documentation
+
+Use the same structure for every lesson: title and course metadata; a brief account of what was reviewed and which CAD tool was used; then **What I learned**, **Course exercises**, **Practice results**, **Verification and limits**, **Artifacts and rebuild**, and **Sources**. Separate the instructor's exercise from the model actually built, link the editable source and exports, and record concrete checks and their limits. Credit MIT OpenCourseWare and the instructor with links to the lesson resources.

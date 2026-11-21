@@ -26,3 +26,7 @@ A lesson is complete when a future agent can apply its decision rule to a differ
 - **Print work:** When printability is part of the task, check the intended scale in a slicer and distinguish that from a physical print test.
 
 Before finishing, review the affected source, export, render, and documentation together. Run the relevant rebuild and feature checks, resolve changed links, and verify actual results against the request. For a documentation-only edit, check links and consistency without churning unchanged CAD assets. Report what was checked and any limitations.
+
+## Test transfer at the end of a lesson
+
+Give a fresh agent the frozen skill and an unfamiliar input, not the worked lesson, its scripts, or coaching. Before dispatch, save the brief, source provenance, skill revision, and observable acceptance criteria. Use trials/<lesson>/v<number>.<YYYY-MM-DD>.<agent-model>+<model-version>/ with scripts/, results/, and renders/. Record the actual model, not just the requested one. Keep the first submission intact. Independently reopen the exports, inspect the rendered result against the source, and record pass, partial, fail, or not tested per criterion. Distinguish skill gaps from input, tool, or execution failures. Change the skill only on evidence; rerun in a new version rather than rewriting the baseline.

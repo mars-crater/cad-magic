@@ -12,14 +12,15 @@ description: Build, revise, verify, or render simple parametric CAD parts using 
 5. When asked to show the result, render the actual saved geometry and inspect the image before sharing. Label independent display scales. For print work, check the intended scale in the slicer; CAD validity alone is not proof of printability.
 6. Report artifacts, assumptions, checks run, and limits. For course work, distinguish what was read or watched from what was built and verified.
 
-## Current lesson reference
+## Apply the workflow to the input
 
-Start with [Lesson 1 notes](../../lessons/01/README.md) and the [CadQuery examples](../../lessons/01/lesson_01_models.py): the cake tests design intent under resize; the phone works from a picture plus an overall envelope; the pencil works from an engineering drawing. Add later techniques after practicing them, keeping lesson-specific records in the lessons directory.
+- **Dimensioned part:** Anchor the sketch or profile to the origin or a stable datum. Use dimensions and relations rather than fixing geometry where it was drawn. Change one driving dimension and check the intended invariant, such as concentric tiers after a diameter edit ([Lesson 1](../../lessons/01/README.md)).
+- **Image or contour reference:** Calibrate scale and origin before tracing. Sample curvature changes rather than pixel noise; inspect the closed spline for overshoot or self-intersection before extruding. Keep functional features such as hole diameters independently dimensioned. Verify terrain with sections and check bores separately from overall bounds.
 
-## Image tracing and spline profiles
-
-For [Lesson 2](../../lessons/02/README.md), calibrate image scale and origin before tracing. Sample meaningful curvature changes rather than pixel noise. Check spline closure and inspect for overshoot or self-intersection before extruding. Keep hole dimensions separate from the traced outline. Verify terrain tiers with sections and verify the keychain bore independently of its overall bounds.
+The [lesson index](../../lessons/README.md) provides evidence and rebuildable examples; the workflow above does not require reading the lessons first.
 
 ## Lesson documentation
 
 Use the same structure for every lesson: title and course metadata; a brief account of what was reviewed and which CAD tool was used; then **What I learned**, **Course exercises**, **Practice results**, **Verification and limits**, **Artifacts and rebuild**, and **Sources**. Separate the instructor's exercise from the model actually built, link the editable source and exports, and record concrete checks and their limits. Credit MIT OpenCourseWare and the instructor with links to the lesson resources.
+
+When a lesson demonstrates a reusable technique, add it to the workflow and record the specific evidence in the lesson index. Keep the root README focused on what the agent can do; put exercise details and rebuild instructions under the lesson. Do not advertise a new capability until its checks support it.

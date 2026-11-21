@@ -1,25 +1,18 @@
 # CAD Magic
 
-**Work in progress.** An independent learning project that turns CAD exercises into checked models and a reusable [agent skill](skills/cad-magic/SKILL.md).
+**Work in progress.** [CAD Magic is an agent skill](skills/cad-magic/SKILL.md) for turning dimensions, sketches, or reference images into editable CAD models with checks that show what works.
 
-Good CAD can look like magic: change a dimension and the rest of the part follows. The point of this project is to make the constraints and choices behind that trick explicit.
+## What the skill gives an agent
 
-## Lesson 1: Introduction to SolidWorks
+- **Model for change.** Choose stable references and encode design intent so dimensions can change without losing alignment. Build the main volumes before cuts and edge details.
+- **Turn a reference into geometry.** Calibrate image scale, trace meaningful curvature with closed splines, and keep critical dimensions such as hole sizes independent of the trace.
+- **Hand off checked results.** Provide editable source, reimport exported STEP files to check geometry, and render the saved model when a visual preview is needed. Report what was measured, estimated, and not tested.
 
-[Notes, editable CadQuery source, and STEP models](lessons/01/README.md). The original lesson uses SolidWorks; these practice models were built in CadQuery.
+## Use the skill
 
-![CAD Magic practice models: four-tier cake, phone, and pencil](lessons/01/lesson-01-renders.png)
+Point your agent at [`skills/cad-magic/SKILL.md`](skills/cad-magic/SKILL.md) and describe the part, its critical dimensions, and the outputs you need. The workflow works with the project's existing CAD tool; the examples use CadQuery.
 
-To rebuild and check the models in a Python environment:
-
-```sh
-python -m pip install -r requirements.txt
-python lessons/01/lesson_01_models.py
-```
-
-## Lesson 2: Splines and Sketch Pictures
-
-[Notes, tracing reference, models, and render](lessons/02/README.md).
+The [lesson index](lessons/README.md) records what each exercise demonstrated and links to the models, renders, and rebuild instructions. Lessons are evidence for the skill, not prerequisites for using it.
 
 ## Credit
 

@@ -23,7 +23,9 @@ Both STEP reimports were valid single solids. I checked terrain height (9 mm) an
 
 ## Artifacts and rebuild
 
-[Editable source](models.py) · [Render from the exported STEP geometry](renders.png)
+[Editable source](models.py)
+
+![Three-tier terrain and spline keychain](renders.png)
 
 After installing the repository requirements, run `python lessons/02/models.py` from the repository root.
 

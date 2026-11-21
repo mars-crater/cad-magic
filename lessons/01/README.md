@@ -29,7 +29,9 @@ All three reopened from STEP as single valid solids and retained their checked o
 
 ## Artifacts and rebuild
 
-[Editable source](lesson_01_models.py) · [Render from exported STEP geometry](lesson-01-renders.png)
+[Editable source](lesson_01_models.py)
+
+![Four-tier cake, phone study, and No. 2 pencil](lesson-01-renders.png)
 
 After installing the repository requirements, run `python lessons/01/lesson_01_models.py` from the repository root.
 

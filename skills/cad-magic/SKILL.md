@@ -15,3 +15,7 @@ description: Build, revise, verify, or render simple parametric CAD parts using 
 ## Current lesson reference
 
 Start with [Lesson 1 notes](../../lessons/01/README.md) and the [CadQuery examples](../../lessons/01/lesson_01_models.py): the cake tests design intent under resize; the phone works from a picture plus an overall envelope; the pencil works from an engineering drawing. Add later techniques after practicing them, keeping lesson-specific records in the lessons directory.
+
+## Image tracing and spline profiles
+
+For [Lesson 2](../../lessons/02/README.md), calibrate image scale and origin before tracing. Sample meaningful curvature changes rather than pixel noise. Check spline closure and inspect for overshoot or self-intersection before extruding. Keep hole dimensions separate from the traced outline. Verify terrain tiers with sections and verify the keychain bore independently of its overall bounds.

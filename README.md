@@ -17,6 +17,17 @@ python -m pip install -r requirements.txt
 python lessons/01/lesson_01_models.py
 ```
 
+## Lesson 2: Splines and Sketch Pictures
+
+[Notes, tracing reference, models, and render](lessons/02/README.md).
+
 ## Credit
 
 Based on [How to CAD Almost Anything (RES.16-002, MIT IAP 2024)](https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/), taught by **Andy Eskenazi** and made available by **MIT OpenCourseWare**. See the [instructor's original workshop repository](https://github.com/andyeske/How-to-CAD-Almost-Anything) for the slides, recordings, and original SolidWorks files. This is not an official MIT course repository and does not redistribute the original materials.
+
+## License
+
+Original CAD Magic code, skill instructions, notes, models, and renders are
+available under the [MIT License](LICENSE). Linked MIT OpenCourseWare materials
+and instructor resources remain under their respective terms; this license does
+not apply to them.

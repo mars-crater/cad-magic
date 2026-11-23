@@ -1,0 +1,1 @@
+Build a 60 mm overall-width keychain from the supplied emblem. Preserve recognizable artwork in unpainted relief with a functional through-bore. Deliver editable source, final.step, top and oblique renders and evidence in submission/. State simplifications and limits.

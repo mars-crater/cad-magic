@@ -1,0 +1,22 @@
+CadQuery 2.8.0
+Nominal source: 94 nodes / 94 valid positive-volume solids; XYZ envelope 122.140 × 116.403 × 17.321 mm
+  6 sectors × 60.00°; cap Ø26.800 mm and concentric; tip envelope local +X 61.070 mm
+  Neighbor blade gaps 8.121 to 8.121 mm; last-to-first 8.121 mm
+  Passed: 18 groove/floor probes, 18 nacelle bore/wall station probes, and 72 shallow seat/floor probes.
+Nominal STEP: 94 nodes / 94 valid positive-volume solids; XYZ envelope 122.140 × 116.403 × 17.321 mm
+  6 sectors × 60.00°; cap Ø26.800 mm and concentric; tip envelope local +X 61.070 mm
+  Neighbor blade gaps 8.121 to 8.121 mm; last-to-first 8.121 mm
+  Passed: 18 groove/floor probes, 18 nacelle bore/wall station probes, and 72 shallow seat/floor probes.
+  Source-to-STEP maximum per-solid volume delta: 0.0000000 mm³
+Edited source: 79 nodes / 79 valid positive-volume solids; XYZ envelope 124.000 × 128.587 × 17.321 mm
+  5 sectors × 72.00°; cap Ø25.200 mm and concentric; tip envelope local +X 65.070 mm
+  Neighbor blade gaps 11.912 to 11.912 mm; last-to-first 11.912 mm
+  Passed: 15 groove/floor probes, 15 nacelle bore/wall station probes, and 60 shallow seat/floor probes.
+Edited STEP: 79 nodes / 79 valid positive-volume solids; XYZ envelope 124.000 × 128.587 × 17.321 mm
+  5 sectors × 72.00°; cap Ø25.200 mm and concentric; tip envelope local +X 65.070 mm
+  Neighbor blade gaps 11.912 to 11.912 mm; last-to-first 11.912 mm
+  Passed: 15 groove/floor probes, 15 nacelle bore/wall station probes, and 60 shallow seat/floor probes.
+  Source-to-STEP maximum per-solid volume delta: 0.0000000 mm³
+d963a557f14d45a5ec211aa1e16e1a52b8f06a971669e248463075db333fa1e0  spinner.step
+2c03bfbac08c9157e68dd7bde1c85a40e9116ca77477e6ae9e3b4cb3faba4938  top.png
+10710cc98f80142d286b2b9cdb392b89b2eb047cf490cb4d64b665cbbbf4b8e5  oblique.png

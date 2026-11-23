@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180" width="480" height="540">
+<rect width="160" height="180" fill="white"/>
+<g fill="none" stroke="#273947" stroke-width="10" stroke-linecap="round"><circle cx="80" cy="24" r="13"/><path d="M80 38V151 M51 60H109 M23 106Q34 141 80 156Q126 141 137 106"/></g>
+<path fill="#273947" d="M17 118l4-26 23 17z M116 109l23-17 4 26z"/>
+<path id="rope" d="M91 23C129 38 122 65 89 78S42 94 54 106S112 110 107 130Q105 142 88 147" fill="none" stroke="white" stroke-width="11"/>
+<use href="#rope" style="display:none"/>
+<path d="M91 23C129 38 122 65 89 78S42 94 54 106S112 110 107 130Q105 142 88 147" fill="none" stroke="#986438" stroke-width="6"/>
+</svg>

@@ -18,3 +18,7 @@ Build two bold reliefs: Madeira Island from the north-up terrain picture and a M
 [Baseline: Terra 6.1 — assessment, renders and failed STEP exports](v1.2026-11-21.terra+6.1/README.md)
 
 [Three-run comparison and skill-version ledger](comparison.md)
+
+[V2: paired Astra 6.2 anchor trial — assessment and matched renders](v2.2026-11-21.astra+6.2/README.md)
+
+[V2 replication: Sol 6.2 anchor trial and matched renders](v2.2026-11-21.sol+6.2/)

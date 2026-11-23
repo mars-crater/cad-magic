@@ -18,3 +18,7 @@ The reviewer reopened all four new STEP files for validity, solid count and dime
 ## Skill-version ledger
 
 Baseline 0357860: Terra, Sol and Astra assessed; **no findings adopted**. Pending validation: (1) try the most fragile internal cut on a small fused sample before modeling the whole emblem; (2) compare an unpainted crest at a common target width, checking letter counters and devil silhouette separately. The trials motivate these hypotheses; they do not prove either intervention helps. Test on a different emblem against the unchanged guide before promoting a rule. Keep the crest reference external; the Sol comparison containing the source raster is not redistributed.
+
+[V2 paired anchor trial](v2.2026-11-21.astra+6.2/README.md): assessed against 0357860. The detail-first intervention showed no material advantage here; not adopted. Fixed-width unpainted views were an assessment control, not a separately tested skill intervention.
+
+[Sol 6.2 V2 replication](v2.2026-11-21.sol+6.2/): 0357860, reviewed; both pass, clearer oblique crossing in detail-first, no skill revision.

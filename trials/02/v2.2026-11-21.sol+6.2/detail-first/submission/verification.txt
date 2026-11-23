@@ -1,0 +1,8 @@
+Reopened coupon crossing at stem center: A-R-A; sampled axial gaps 1.14 and 1.12 mm.
+Reopened final crossing at stem center: A-R-A; sampled axial gaps 1.14 and 1.12 mm.
+Width 60.0000, height 69.2958, thickness 4.2000 mm; bore Ø6.50 mm centered at (0.0000, 25.3521) mm, 4 circular sections, full-length gauge clear, 2 mm uninterrupted backing collar.
+Volume outside backing footprint: 0.00000000 mm³.
+anchor: SVG vs STEP top footprint IoU 97.78%; coupon interior IoU 98.41%
+rope: SVG vs STEP top footprint IoU 96.92%; coupon interior IoU 97.01%
+Parameter edit (unexported rebuild):
+Width 66.0000, height 76.2254, thickness 4.2000 mm; bore Ø7.00 mm centered at (0.0000, 27.8873) mm, 4 circular sections, full-length gauge clear, 2 mm uninterrupted backing collar.

@@ -1,0 +1,8 @@
+seed solids 1 valid True bbox mm 52.5 19.5 8.3 volume 2375.1
+spinner solids 46 valid True bbox mm 145.202 135.749 15.704 volume 29005.55
+seed section stations: x, width, center z, thickness
+19 15 0 2.6
+34 17 0.2 2.6
+49 18 0.8 2.6
+63 19 2.2 2.6
+71 19 5.2 2.6

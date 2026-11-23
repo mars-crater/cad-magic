@@ -6,11 +6,15 @@
 
 - **Model for change.** Choose stable references and encode design intent so dimensions can change without losing alignment. Build the main volumes before cuts and edge details.
 - **Turn a reference into geometry.** Identify the features that make the subject recognizable, trace at a known scale, then compare the exported geometry against the source. Keep functional dimensions such as hole sizes independent of the trace.
+- **Design editable patterns.** Choose what stays fixed when repeat count changes, then verify both the individual features and the join between the first and last copies.
+- **Model changing sections.** Choose between a sweep along a path and a loft through specified profiles; check intermediate sections and openings on the exported part.
 - **Hand off checked results.** Provide editable source, reimport exported STEP files to check geometry, and render the saved model when a visual preview is needed. Report what was measured, estimated, and not tested.
 
 ## Use the skill
 
 Point your agent at [`skills/cad-magic/SKILL.md`](skills/cad-magic/SKILL.md) and describe the part, its critical dimensions, and the outputs you need. The workflow works with the project's existing CAD tool; the examples use CadQuery.
+
+**Optional local role setup:** From the repository root, run `cp -n cad-magic.example.json cad-magic.local.json`. Edit that copy to set each role to a model ID or agent alias recognized by your runner. Leave a value `null` to inherit your usual default. The [sample](cad-magic.example.json) names no preferred provider or model; Git ignores the local copy. When handing a task to an agent, give it this checkout and point it to [the role instructions](AGENTS.md#local-role-selection).
 
 The [lesson index](lessons/README.md) records what each exercise demonstrated and links to the models, renders, and rebuild instructions. Lessons are evidence for the skill, not prerequisites for using it.
 

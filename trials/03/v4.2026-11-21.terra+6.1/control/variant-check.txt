@@ -1,0 +1,2 @@
+source solids 1 valid True volume 34299.24693851607
+STEP solids 1 valid True volume 34299.24693971623 bbox 134.34088974229277 140.9453537402034 18.8

@@ -1,0 +1,1 @@
+Baseline: independently measure all three sections (1 mm tolerance), offset and wall, check continuity, valid single solid, and mouth orientation. Judge visual fidelity separately; finish N/A. No course scripts or feedback.

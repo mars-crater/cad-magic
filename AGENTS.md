@@ -2,6 +2,12 @@
 
 CAD Magic is a skill first. The [skill](skills/cad-magic/SKILL.md) tells an agent how to do the work; the [lesson index](lessons/README.md) points to evidence that the techniques work. Keep the [root README](README.md) focused on agent capabilities. Put exercises, original course credits, build commands, artifacts, and observed results on the lesson pages.
 
+## Local role selection
+
+Before starting a task, read `cad-magic.local.json` from this checkout if present. Select only the role the task needs: `builder` for making the part, `reviewer` for independently assessing a submission, `lesson_learner` for working through source lessons, or `skill_builder` for authoring the handbook. An explicit task assignment takes precedence; a missing file, missing role or null value leaves the runner default unchanged.
+
+This is a handoff convention, not an automatic model switch. The coordinator selects the configured agent or model through its runner. If it cannot honor an explicit selection, report the mismatch rather than silently substituting. An ordinary build does not start a reviewer. For trials, keep review independent and record the actual model used, not the local config file.
+
 ## Start with the intended result
 
 For work based on media, open the actual image, drawing, slide, or relevant video segment before designing. Identify what the viewer must recognize or the part must do. Record the reference, the features that carry its meaning, and deliberate departures (including substitute artwork, scale, omitted detail, and why). Do not generate a reference from your proposed model and treat agreement as independent evidence.

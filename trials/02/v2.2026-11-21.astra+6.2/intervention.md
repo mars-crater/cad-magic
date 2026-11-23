@@ -1,0 +1,1 @@
+Choose the detail whose loss would make the subject hardest to recognize. Build that detail on a small piece of the base first, export it, reopen it, and inspect it unpainted at the target size before building the rest.

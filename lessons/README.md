@@ -10,4 +10,14 @@ Each lesson records what was built, what was verified, and which technique becam
 
   [![Hawaiʻi Island relief and whale-watching keychain beside their source references](02/renders.png)](02/README.md)
 
+- [03 · Revolves, planes and patterns](03/README.md) — A swept-wing spinner and an open honeycomb tube demonstrate when a new repeat should change spacing or diameter, and how to check a wrapped seam.
+
+  [![Spinner](03/spinner/spinner.png)](03/README.md)
+
+  [![Open nanotube](03/nanotube/nanotube.png)](03/README.md)
+
+- [04 · Lofts and sweeps](04/README.md) — Shape a transition with corresponding profiles and check the exported sections, not just the silhouette. A hollow adaptor tests the rule on a subject outside the course.
+
+  [![Lofted boat hull with an open interior](04/hull/boat-hull.png)](04/README.md)
+
 These are CAD checks, not physical print tests.

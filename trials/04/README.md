@@ -1,0 +1,4 @@
+# Lesson 4 findings
+
+- **Adopted — section correspondence and verification.** The [course hull](../../lessons/04/hull/model.py) and [unfamiliar adaptor](v1.2026-11-21.sol+6.2/review.md) support choosing stations by the profiles that matter and checking the exported sections, including the passage for hollow parts. Adopted in [SKILL.md](../../skills/cad-magic/SKILL.md), SHA-256 `e4b66a8b833215c900e4e6b9e4432ba690ec1bdf9b07fb306bbed16df71b7ca4`. The adaptor passed on the [prior snapshot](v1.2026-11-21.sol+6.2/revision.txt); no comparative gain was measured.
+- **Pending — independently editable inferred depth.** The [banana reproduction](v2.2026-11-21.sol+6.2/results/review.md) preserved the projected silhouette under a depth edit. That exercise repeated a course subject; transfer to a different silhouette remains untested.
